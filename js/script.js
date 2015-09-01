@@ -5,7 +5,7 @@ $(window).load(function() {
     $(this).parent().next().toggleClass('open');
   });
 
-	var height1 = $('#block1').height();
+	var height1 = $('#above-the-fold').height();
 	$(window).scroll(function(){
         if($(window).scrollTop() > height1){
             $('#menu').css('position','fixed');
