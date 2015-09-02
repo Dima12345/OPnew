@@ -265,6 +265,7 @@
   position: relative;
   padding-top: 106px;
 }
+
 #value-proposition .content{
   background: url(../img/block2.jpg) no-repeat center;
   background-size: cover;
@@ -555,12 +556,19 @@ li:hover canvas {
 #main-video{
   height: 532px;
   position: relative;
-  background: url(../img/block3.jpg) no-repeat center bottom #f8f9fa;
+  background: url(../img/hands-with-tablet.jpg) no-repeat center bottom #f8f9fa;
+}
+
+.main-video-bg {
+  height: 532px;
+  position: relative;
+  background: url(../img/block3.jpg) no-repeat center bottom ;
 }
 
 .main-video-video {
   position: absolute;
-  top: 0;
+  top: 72px;
+  left: 394px;
 }
 
 #socicons{
@@ -577,18 +585,11 @@ li:hover canvas {
 #socicons img:hover{
   opacity: 0.8;
 }
-.main-video-bg{
-  position: absolute;
-  left: 50%;
-  bottom: 65px;
-  margin-left: -248px;
-}
-
 .center2{
   margin: 0 auto;
   max-width: 960px;
 }
-#block4 h2{
+#schedule-halls h2{
   text-align: center;
   padding-top: 25px;
   text-transform: uppercase;
@@ -597,7 +598,7 @@ li:hover canvas {
   font-family: 'a_avantebsextrabold';
   font-weight: normal;
 }
-#block4 h3{
+#schedule-halls h3{
   text-align: center;
   margin: 0 auto;
   background: #fff;
@@ -606,14 +607,14 @@ li:hover canvas {
   position: relative;
   z-index: 2;
 }
-#block4 h3 span{
+#schedule-halls h3 span{
   display: block;
   color: #515151;
   font-size: 48px;
   line-height: 30px;
   font-family: 'a_avanteltlight';
 }
-#block4 h3 span+span{
+#schedule-halls h3 span+span{
   font-size: 24px;
   font-family: 'a_avantetckmedium';
 
@@ -651,22 +652,22 @@ li:hover canvas {
   display: inline-block;
   margin-top: 10px;
 }
-h4.zalone{
+h4.hallone{
   background: #f42b40;
 }
-h4.zaltwo{
+h4.halltwo{
   background: #0876ca;
 }
-h4.zalthree{
+h4.hallthree{
   background: #13b371;
 }
-.linep{
+.schedule-section{
   height: 109px;
 }
-.linep .center2{
+.schedule-section .center2{
   padding-top: 1px;
 }
-.timep{
+.schedule-timestamp{
   float: left;
   line-height: 109px;
   padding-left: 30px;
@@ -675,10 +676,10 @@ h4.zalthree{
   font-family: 'a_avanteltlight';
   margin-top: -1px;
 }
-#block5{
+#schedule-registration{
   background: #ce8c83;
 }
-.namelinep{
+.schedule-section-title{
   text-align: center;
   margin-top: 5px;
   padding: 0 150px;
@@ -687,45 +688,52 @@ h4.zalthree{
   color: #fff;
   font-family: 'a_avantetckmedium';
 }
-#block5 .namelinep{
+
+@media (max-width: 655px) {
+  .schedule-section-title{
+    font-size: 16px;
+  }
+}
+
+#schedule-registration .schedule-section-title{
   background: url(../img/reg.png) no-repeat 50% 20px;
 }
-#block6{
+#schedule-intro{
   background: #536163;
   margin-top: 1px;
 }
-#block6 .namelinep{
+#schedule-intro .schedule-section-title{
   background: url(../img/vstup.png) no-repeat 50% 14px;
 }
-.listus{
+.schedule-list{
   margin: 0 auto;
   max-width: 959px;
   border-left: 1px solid #c4c4c4;
   border-right: 1px solid #c4c4c4;
 }
-.timeus{
+.schedule-time{
   height: 68px;
   line-height: 68px;
   background: #f5f5f5;
 }
-.timeus .time{
+.schedule-time .time{
   float: left;
   margin-left: 25px;
   font-size: 30px;
   color: #28aae0;
   font-family: 'a_avanteltlight';
 }
-.timeus .close{
+.schedule-time .closed-meeting{
   float: right;
   margin-right: 18px;
 }
-.timeus .close h3{
+.schedule-time .closed-meeting h3{
   font-style: 18px;
   color: #8e8e8e;
   margin-right: 33px;
   float: left;
 }
-.timeus .close h3 p{
+.schedule-time .closed-meeting h3 p{
   line-height: 130%;
   display: table-cell;
   vertical-align: middle;
@@ -733,7 +741,7 @@ h4.zalthree{
   font-family: 'a_avantebsextrabold';
   height: 68px;
 }
-.timeus .close h3 p span{
+.schedule-time .closed-meeting h3 p span{
   font-style: italic;
   font-family: 'a_avantetckmedium';
 }
@@ -753,41 +761,50 @@ h4.zalthree{
 .buyvip:hover{
   opacity: 0.8;
 }
-.contuse{
+.schedule-three-reporters{
   padding-top: 9px;
   padding-bottom: 25px;
+  width: 992px;
 }
-.contuse table{
+.schedule-three-reporters table{
   width: 100%;
 }
-.contuse td{
+.schedule-three-reporters td{
   width: 33%;
 }
-.contuse .content{
+.schedule-three-reporters .schedule-reporter{
   max-width: 235px;
   margin: 0 auto;
   padding: 0 5px;
   padding-top: 1px;
 }
-.contuse .img{
+.schedule-three-reporters .schedule-reporter h3 span{
+  font-family: 'a_avantebsextrabold';
+  color:  #515151;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.schedule-three-reporters .img{
   position: relative;
   float: left;
 }
-.contuse .img img+img{
+.schedule-three-reporters .img img+img{
   position: absolute;
   bottom: 2px;
   right: 2px;
 }
-.contuse h3{
+.schedule-three-reporters h3{
   margin-left: 80px;
   margin-top: 9px;
 }
-.toopen .contuse h3{
+.toopen .schedule-three-reporters h3{
   min-height: 25px;
   cursor: pointer;
   margin-top: 25px;
 }
-.toopen .contuse span{
+.toopen .schedule-three-reporters span{
   display: table-cell;
   vertical-align: middle;
   height: 25px;
@@ -796,83 +813,85 @@ h4.zalthree{
   padding-right: 33px;
   background: url(../img/info.png) no-repeat right center;
 }
-.contuse .info{
+.schedule-three-reporters .info{
   margin-top: 5px;
   font-size: 14px;
   color: #515151;
   font-style: italic;
   margin-left: 80px;
 }
-.contuse .pan .info{
+
+.schedule-three-reporters .pan .info{
   color: #515151;
   font-style: normal;
   margin-top: 0;
 }
-.contuse p{
+.schedule-three-reporters p{
   margin-top: 10px;
   color: #515151;
 }
-.all .contuse p{
+.all .schedule-three-reporters p{
   margin-left: 80px;
   font-size: 18px;
   margin-top: 0;
 }
-.all .contuse p span{
+.all .schedule-three-reporters p span{
   font-weight: bold;
   color: #49b6e3;
   font-size: 24px;
 }
-.contuse .pan p{
+.schedule-three-reporters .pan p{
   margin-top: 0;
   margin-left: -5px;
 }
-.contuse .pan p img{
+.schedule-three-reporters .pan p img{
   margin-top: 5px;
   margin-left: 5px;
 }
-.contuse p.red{
+.schedule-three-reporters p.red{
   font-weight: bold;
   color: #ff003c;
 }
-.contuse+.timeus{
+.schedule-three-reporters+.schedule-time{
   border-top: 1px solid #c4c4c4;
 }
-#block7{
+#schedule-coffee-break{
   background: #30acaf;
 }
-#block7 .namelinep {
+#schedule-coffee-break .schedule-section-title {
   background: url(../img/coffee.png) no-repeat 50% 10px;
-  padding-right: 170px;
+  padding-right: 190px;
 }
-#block8{
+#schedule-dinner{
   background: #c6b249;
 }
-#block8 .namelinep {
+#schedule-dinner .schedule-section-title {
   background: url(../img/obed.png) no-repeat 50% 10px;
 }
-#block9{
+#schedule-closure{
   background: #db656d;
 }
-#block9 .namelinep {
+#schedule-closure .schedule-section-title {
   background: url(../img/t.png) no-repeat 50% 10px;
 }
-#block10{
+#schedule-intertainment{
   background: #5e71a7;
   margin-top: 2px;
   margin-bottom: 2px;
 }
-#block10 .namelinep {
+#schedule-intertainment .schedule-section-title {
   background: url(../img/sax.png) no-repeat 50% 10px;
 }
-#block11{
+
+#schedule-closed-meetings{
   min-height: 82px;
   line-height: 82px;
   background: #3b92fd;
 }
-#block11 .center2{
+#schedule-closed-meetings .center2{
   padding-top: 1px;
 }
-#block11 .buyvip{
+#schedule-closed-meetings .buyvip{
   float: right;
   margin-right: 18px;
   margin-top: 20px;
@@ -887,10 +906,10 @@ h4.zalthree{
   font-family: 'a_avantetckmedium';
   background: #f03865;
 }
-#block11 .buyvip:hover{
+#schedule-closed-meetings .buyvip:hover{
   opacity: 0.9;
 }
-#block11 h2{
+#schedule-closed-meetings h2{
   margin-top: -1px;
   text-align: center;
   font-size: 40px;
@@ -899,35 +918,35 @@ h4.zalthree{
   padding-left: 181px;
   font-family: 'a_avantebsextrabold';
 }
-.listus.bot{
+.schedule-list.schedule-closed-meetings{
   border-bottom: 1px solid #c4c4c4;
 }
-.listus.all{
+.schedule-list.all{
   border: 1px solid #c4c4c4;
 }
-#block12{
+#schedule-expert-desks{
   margin: 20px 0;
   text-align: center;
 }
-#block12 h2{
+#schedule-expert-desks h2{
   font-size: 40px;
   font-weight: normal;
   color: #515151;
   font-family: 'a_avantebsextrabold';
   text-transform: uppercase;
 }
-#block12 h3{
+#schedule-expert-desks h3{
   font-size: 24px;
   color: #515151;
   font-family: 'a_avantetckmedium';
   margin-top: 10px;
 }
-#block13{
+#partners{
   padding-top: 10px;
   padding-bottom: 30px;
   background: #f5f5f5;
 }
-#block13 h2{
+#partners h2{
   text-align: center;
   font-size: 40px;
   color: #515151;
@@ -935,12 +954,12 @@ h4.zalthree{
   text-transform: uppercase;
   font-family: 'a_avantebsextrabold';
 }
-#block13 ul{
+#partners ul{
   margin-top: 20px;
   font-size: 0;
   text-align: center;
 }
-#block13 li{
+#partners li{
   list-style: none;
   display: inline-block;
   width: 150px;
@@ -950,7 +969,7 @@ h4.zalthree{
   border: 1px solid #dedede;
   box-shadow: 1px 1px 1px #eaeaea;
 }
-#block13 li a{
+#partners li a{
   display: table-cell;
   vertical-align: middle;
   text-align: center;
