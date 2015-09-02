@@ -564,10 +564,6 @@ li:hover canvas {
 }
 
 #socicons{
-  /*position: absolute;
-  left: 0;
-  top: 120px;
-  list-style: none;*/
   position: absolute;
   left: 0;
   top: 200px;

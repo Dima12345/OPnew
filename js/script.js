@@ -26,7 +26,7 @@ $(document).ready(function() {
         }    
 	});
 
-  var height_for_social = $('#above-the-fold').height() + $('#above-the-fold').height();
+  var height_for_social = $('#above-the-fold').height() + $('#value-proposition').height();
   $(window).scroll(function(){
         if($(window).scrollTop() > height_for_social){
             $('#socicons').css('position','fixed');
