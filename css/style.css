@@ -261,7 +261,7 @@
 .callback-button:hover{
   opacity: 0.8;
 }
-#block2{
+#value-proposition{
   position: relative;
   padding-top: 106px;
 }
@@ -1851,7 +1851,7 @@ h4.zalthree{
     top:4px;
     position:absolute;
 }
-.b-pic img{
+.b-pic img, .galone img{
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -1860,15 +1860,17 @@ h4.zalthree{
   /*filter: url(desaturate.svg#greyscale); */
   filter: gray;
   -webkit-filter: grayscale(1);
+  transition: all 0.4s;
 }
 
-.b-pic img:hover{
+.b-pic img:hover, .galone img:hover{
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   -ms-filter: grayscale(0%);
   -o-filter: grayscale(0%);
   filter: none;
+  transition: all 0.4s;
 }
 
 /*------ Carusel for value position ---------------------*/

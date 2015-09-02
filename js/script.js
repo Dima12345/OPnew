@@ -12,7 +12,7 @@ $(document).ready(function() {
     pager: false
   });
 
-    $('.value-proposition').bxSlider({
+    $('.value-proposition-carousel').bxSlider({
       pager: false,
       maxSlides: 6,
       minSlides: 2,
@@ -80,10 +80,6 @@ $(document).ready(function() {
     });
   });
 
-	$('#slider2 ul img, .galone img').each(function() {
-    createCanvas(this);
-  });
-
   $(".main-video-placeholder").click(function(){
     $(this).hide();
   });
@@ -91,55 +87,7 @@ $(document).ready(function() {
   $('#play-video').on('click', function(ev) {
     $("#video")[0].src += "&autoplay=1";
     ev.preventDefault();
-
   });
-
-  function createCanvas(image) {
-        // подключаем canvas
-    var canvas = document.createElement('canvas');
-    var ctx = canvas.getContext("2d");
-
-      // определяем размер изображения
-      canvas.width = image.width;
-      canvas.height = image.height;
-
-      // после того, как мы получаем ссылку на изображение мы используем метод
-          // drawImage, чтобы рисовать и манипулировать canvas'ом
-      ctx.drawImage(image, 0, 0);
-
-      // отсюда начинается код, который будет выполять проход по изображению,
-          // каждый пискель 4 байта. Тем самым мы получим доступ к кажому пискелю и
-          //сможем задать свой цвет. Здесь можно экспериментировать и сделать не только
-          // черно-белое изображение, но и в разных цветовых тонах: зеленых, красных, синих, сепии и т.д.
-
-      var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height),
-          pixelData = imageData.data;
-
-      // пишем цикл для прохода по массиву, который мы создали выше
-      for (var y = 0; y < canvas.height; y++) {
-        for (var x = 0; x < canvas.width; x++) {
-
-      
-          var i = (y * 4 * canvas.width) + (x * 4);
-          var red = pixelData[i];
-          var green = pixelData[i + 1];
-          var blue = pixelData[i + 2];
-
-          // формула черно-белого варианта, мы задаем этот результат для каждого пикселя и цвета: зеленый, красный, синий
-          var grayScale = (red * 0.3) + (green * 0.59) + (blue * .11);
-
-          pixelData[i] = grayScale;
-          pixelData[i + 1] = grayScale;
-          pixelData[i + 2] = grayScale;
-        }
-      }
-
-      // обновляем наш результат и помещаем его в canvas.
-      ctx.putImageData(imageData, 0, 0, 0, 0, imageData.width, imageData.height);
-
-      // Вставляем canvas в DOM элемент перед основной картинкой:
-      image.parentNode.insertBefore(canvas, image);
-  }
   
   $('.faqqw').click(function(){
     if ($(this).hasClass('active')) {
