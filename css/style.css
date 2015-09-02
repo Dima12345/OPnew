@@ -1873,11 +1873,7 @@ h4.zalthree{
   transition: all 0.4s;
 }
 
-/*------ Carusel for value position ---------------------*/
-
 /*------ FAQ Block --------------------------------------*/
-
-
 #faq {
       margin-top: 85px;
       max-width: 980px;
@@ -1928,4 +1924,10 @@ h4.zalthree{
 }
 .faqqw:hover, .faqqw.active { color: #d46944; }
 .faqans.active { display: block; }
-/*----------- END   FAQ Block    END -------------------*/
+
+/* ********** FOOTER ********** */
+#footer {
+  background-color: #2c3947;
+  position: relative;
+  padding: 20px;
+}
