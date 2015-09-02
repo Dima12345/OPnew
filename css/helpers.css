@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'a_avantebsextrabold';
+  src: url('../fonts/a-avantebs-extrabold-webfont.eot');
+  src: url('../fonts/a-avantebs-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/a-avantebs-extrabold-webfont.woff2') format('woff2'),
+    url('../fonts/a-avantebs-extrabold-webfont.woff') format('woff'),
+    url('../fonts/a-avantebs-extrabold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'a_avantetckmedium';
+  src: url('../fonts/a_avantetck_medium-webfont.eot');
+  src: url('../fonts/a_avantetck_medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/a_avantetck_medium-webfont.woff2') format('woff2'),
+    url('../fonts/a_avantetck_medium-webfont.woff') format('woff'),
+    url('../fonts/a_avantetck_medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'a_avanteltlight';
+  src: url('../fonts/7127113-webfont.eot');
+  src: url('../fonts/7127113-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/7127113-webfont.woff2') format('woff2'),
+    url('../fonts/7127113-webfont.woff') format('woff'),
+    url('../fonts/7127113-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+}
+body, html{
+  font-family: Arial;
+  height: 100%;
+  font-size: 14px;
+}
+a {
+  transition: color, background-color 0.3s;
+}
+a:hover{
+  text-decoration: none;
+}
+.clear{
+  clear: both;
+}
+#wrapper {
+  height: 100%;
+}
+.uppercase-text {
+  text-transform: uppercase;
+}
