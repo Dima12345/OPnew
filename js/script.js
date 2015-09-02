@@ -12,6 +12,17 @@ $(document).ready(function() {
     pager: false
   });
 
+    $('.value-proposition').bxSlider({
+      pager: false,
+      maxSlides: 6,
+      minSlides: 2,
+      moveSlides: 1,
+      slideWidth: 144,
+      touchEnabled:true,
+      nextText: '',
+      prevText: ''
+   });
+
   $('.opent .toggle').click(function(event) {
     $(this).toggleClass('open');
     $(this).parent().next().toggleClass('open');
@@ -130,5 +141,17 @@ $(document).ready(function() {
       image.parentNode.insertBefore(canvas, image);
   }
   
-
+  $('.faqqw').click(function(){
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      var to = $(this).attr('for');
+      $(this).nextAll(to).removeClass('active').animate({opacity:'hide'}, 300);
+    } else {
+      $('.faqqw.active').removeClass('active');
+      $('.faqans.active').removeClass('active').css('display','none');
+      $(this).addClass('active');
+      var to = $(this).attr('for');
+      $(this).nextAll(to).addClass('active').animate({opacity:'show'}, 300);
+    };
+  });
 });

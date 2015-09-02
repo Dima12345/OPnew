@@ -859,64 +859,10 @@ h4.zalthree{
 #block10{
   background: #5e71a7;
   margin-top: 2px;
+  margin-bottom: 2px;
 }
 #block10 .namelinep {
   background: url(../img/sax.png) no-repeat 50% 10px;
-}
-#zar{
-  background: url(../img/zar.jpg) no-repeat center;
-  background-size: cover;
-  padding-top: 19px;
-  padding-bottom: 33px;
-}
-#zar h2{
-  text-align: center;
-  font-size: 40px;
-  color: #fff;
-  font-weight: normal;
-  font-family: 'a_avantebsextrabold';
-}
-#zar form{
-  margin-top: 45px;
-}
-#zar .name{
-  width: 253px;
-  height: 54px;
-  background: #fff;
-  padding: 0 10px;
-  border-radius: 4px;
-  border:none;
-  border-bottom: 1px solid #c8c8c8;
-  margin-left: 30px;
-}
-#zar .send{
-  width: 150px;
-  height: 54px;
-  background: #fd756e;
-  border-radius: 0 4px 4px 0;
-  font-weight: bolder;
-  font-size: 18px;
-  color: #fff;
-  border:none;
-  border-bottom: 1px solid #c8c8c8;
-  float: right;
-}
-#zar .send:hover{
-  opacity: 0.9;
-}
-#zar .comp{
-  padding: 0 10px;
-  border-radius: 4px 0 0 4px;
-  border: none;
-  background: #fff;
-  border-bottom: 1px solid #c8c8c8;
-  height: 54px;
-  width: 425px;
-  float: left;
-}
-#zar .wrap{
-  float: right;
-  width: 595px;
 }
 #block11{
   min-height: 82px;
@@ -1089,6 +1035,14 @@ h4.zalthree{
   margin: 0 auto;
   color: #5e6264;
 }
+.ticket .wrap-online{
+  width: 168px;
+  height: 100px;
+  background: url(../img/standart-ticket-online.png);
+  padding-top: 139px;
+  margin: 0 auto;
+  color: #5e6264;
+}
 .ticket h3{
   font-weight: normal;
   font-family: 'a_avanteltlight';
@@ -1106,11 +1060,20 @@ h4.zalthree{
   font-family: 'a_avantebsextrabold';
   font-size: 24px;
 }
-.ticket .wrap:hover{
+.ticket .wrap-gold{
   width: 208px;
   height: 124px;
   background: url(../img/ticketh.png);
   padding-top: 155px;
+  margin: 0 auto;
+  margin-top: -22px;
+}
+.ticket .wrap-gold-online{
+  width: 208px;
+  height: 124px;
+  background: url(../img/ticket-online-gold.png);
+  padding-top: 155px;
+  margin: 0 auto;
   margin-top: -22px;
 }
 .ticket.gold .wrap{
@@ -1780,3 +1743,187 @@ h4.zalthree{
   margin-top: 10px;
   margin-left: 26px;
 }
+
+/* ---------------------- Carusel for value position ------------------------*/
+
+.b-wrap-slider{
+    margin: 0 auto;
+    width:82%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    height:144px;
+}
+.b-wrap-slider .bx-slider {
+    list-style: none;
+    vertical-align: top;
+    position: relative;
+    width: 2000em; 
+}
+.b-wrap-slider .bx-wrapper {
+    position: relative;
+    margin: 0 auto !important;
+    padding: 0;
+    *zoom: 1;
+}
+.b-wrap-slider .bx-wrapper .bx-controls-direction a {
+    margin: 0;
+    outline: 0;
+    text-indent: -9999px;
+    z-index: 10;
+    display: block;
+}
+.b-wrap-slider .bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}
+.b-wrap-slider .bx-prev {
+    left: -100px;
+    top: 0px;
+    position: absolute;
+    width:33px;
+    height:63px;
+    background: url('../img/slider-arrow-prev.png') center center no-repeat;
+    cursor:pointer;
+    font-size:0;
+    line-height:0;
+    text-indent:-9999em;
+    overflow:hidden;
+    opacity: 0.5; 
+}
+.b-wrap-slider .bx-prev:hover {
+    left: -100px;
+    top: 0px;
+    position: absolute;
+    width:33px;
+    height:63px;
+    background: url('../img/slider-arrow-prev.png') center center no-repeat;
+    cursor:pointer;
+    font-size:0;
+    line-height:0;
+    text-indent:-9999em;
+    overflow:hidden;
+    opacity: 1;
+}
+.b-wrap-slider .bx-next { right: -100px;
+    top: 0px;
+    position: absolute;
+    width:33px;
+    height:63px;
+    background: url('../img/slider-arrow-next.png') center center no-repeat;
+    cursor:pointer;
+    font-size:0;
+    line-height:0;
+    text-indent:-9999em;
+    overflow:hidden;
+    opacity: 0.5; 
+}
+.b-wrap-slider .bx-next:hover {
+    right: -100px;
+    top: 0px;
+    position: absolute;
+    width:33px;
+    height:63px;
+    background: url('../img/slider-arrow-next.png') center center no-repeat;
+    cursor:pointer;
+    font-size:0;
+    line-height:0;
+    text-indent:-9999em;
+    overflow:hidden;
+    opacity: 1;
+}
+.b-wrap-slider .bx-controls {
+    z-index: 10;
+    height: 0;
+    left: 0px;
+    top: 43px;
+    position: absolute;
+    width: 100%;
+}
+.bx-slider .b-item {
+    border-radius:2px;
+    width:144px;
+    height:144px;
+    position:relative;
+    float:left;
+}
+.bx-slider .b-pic {
+    top:4px;
+    position:absolute;
+}
+.b-pic img{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  /*filter: url(desaturate.svg#greyscale); */
+  filter: gray;
+  -webkit-filter: grayscale(1);
+}
+
+.b-pic img:hover{
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: none;
+}
+
+/*------ Carusel for value position ---------------------*/
+
+/*------ FAQ Block --------------------------------------*/
+
+
+#faq {
+      margin-top: 85px;
+      max-width: 980px;
+      margin-bottom: 40px;
+}
+.h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #3c3c3c;
+}
+#faq ul {
+  margin-top: 45px;
+  padding: 0 10px;
+}
+#faq li {
+  float: left;
+  width: 415px;
+  line-height: 170%;
+    list-style-type: none;
+}
+#faq li+li { float: right; }
+#faq li h3 {
+  min-height: 55px;
+  padding-left: 65px;
+  background: url(../img/faq.png) no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 18px;
+    color: #595959;
+    height: 51px;
+}
+#faq li p {
+  font-size: 15px;
+  color: #505050;
+  margin-top: 15px;
+}
+.faqqw {
+  text-align: left;
+  cursor: pointer;
+}
+.faqqw:hover, .faqqw.active { color: #d46944; }
+.faqans { display: none; }
+.faqans.active {  display: block; }
+.faqqw {
+  text-align: left;
+  cursor: pointer;
+}
+.faqqw:hover, .faqqw.active { color: #d46944; }
+.faqans.active { display: block; }
+/*----------- END   FAQ Block    END -------------------*/
