@@ -265,7 +265,7 @@
   position: relative;
   padding-top: 106px;
 }
-#block2 .content{
+#value-proposition .content{
   background: url(../img/block2.jpg) no-repeat center;
   background-size: cover;
   position: relative;
@@ -404,7 +404,7 @@
 #bot_menu .center li a:hover{
   opacity: 0.8;
 }
-#block2 h2{
+#value-proposition h2{
   padding-top: 40px;
   text-align: center;
   font-size: 40px;
