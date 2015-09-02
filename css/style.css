@@ -552,16 +552,24 @@ canvas {
 li:hover canvas {
   opacity:0;
 }
-#block3{
+#main-video{
   height: 532px;
   position: relative;
   background: url(../img/block3.jpg) no-repeat center bottom #f8f9fa;
 }
+
+.main-video-video {
+  position: absolute;
+  top: 0;
+}
+
 #socicons{
   position: absolute;
   left: 0;
-  top: 120px;
+  top: 200px;
+  z-index: 20;
   list-style: none;
+
 }
 #socicons img{
   display: block;
@@ -569,12 +577,13 @@ li:hover canvas {
 #socicons img:hover{
   opacity: 0.8;
 }
-#video{
+.main-video-bg{
   position: absolute;
   left: 50%;
   bottom: 65px;
   margin-left: -248px;
 }
+
 .center2{
   margin: 0 auto;
   max-width: 960px;

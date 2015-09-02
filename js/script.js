@@ -26,6 +26,15 @@ $(document).ready(function() {
         }    
 	});
 
+  var height_for_social = $('#above-the-fold').height() + $('#value-proposition').height();
+  $(window).scroll(function(){
+        if($(window).scrollTop() > height_for_social){
+            $('#socicons').css('position','fixed');
+        } else {
+            $('#socicons').css('position','absolute');
+        }    
+  });
+
   $('.wrapsliderin').each(function(index, el) {
     var slider = $(this);
     var num = 0;
@@ -62,6 +71,16 @@ $(document).ready(function() {
 
 	$('#slider2 ul img, .galone img').each(function() {
     createCanvas(this);
+  });
+
+  $(".main-video-placeholder").click(function(){
+    $(this).hide();
+  });
+
+  $('#play-video').on('click', function(ev) {
+    $("#video")[0].src += "&autoplay=1";
+    ev.preventDefault();
+
   });
 
   function createCanvas(image) {
@@ -109,5 +128,7 @@ $(document).ready(function() {
 
       // Вставляем canvas в DOM элемент перед основной картинкой:
       image.parentNode.insertBefore(canvas, image);
-    }
+  }
+  
+
 });
