@@ -2,7 +2,6 @@
   margin: 0 auto;
   width: 1200px;
   padding: 0 20px;
-  position: relative;
 }
 #above-the-fold{
   background: url(../img/above-the-fold-bg.jpg) no-repeat center;
@@ -1953,6 +1952,9 @@ h4.hallthree{
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   min-height: 185px;
+}
+#footer .center {
+  position: relative;
 }
 #footer section {
   width: 250px;
