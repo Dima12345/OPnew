@@ -32,8 +32,9 @@ $(document).ready(function() {
    });
 
   $('.opent .toggle').click(function(event) {
-    $(this).toggleClass('open');
-    $(this).parent().next().toggleClass('open');
+
+      $(this).toggleClass('open');
+      $(this).parent().next().slideToggle("open");
   });
 
 	var height1 = $('#above-the-fold').height();
@@ -110,4 +111,25 @@ $(document).ready(function() {
       $(this).nextAll(to).addClass('active').animate({opacity:'show'}, 300);
     };
   });
+
+  $('.md-trigger').click(function(){
+    if ($('#modal-1').hasClass('.md-show')) {
+    } else {
+      $('#modal-1').addClass('.md-show');
+      $('#modal-1').css("visibility", "visible");
+    };
+  });
+
+  //$('body').click(function($){
+  $('body').click(function (e){ // событие клика по веб-документу
+    var div = $("iframe"); // тут указываем ID элемента
+    var div_two = $(".md-trigger");
+    if (!div.is(e.target) && div.has(e.target).length === 0 && !div_two.is(e.target) && div_two.has(e.target).length === 0) { // если клик был не по нашем блокам  и не по их дочерним элементам
+      $('#modal-1').css("visibility", "hidden");
+      $('#modal-1').removeClass('.md-show');
+      //div.hide(); // скрываем его
+    };
+
+  });
 });
+
