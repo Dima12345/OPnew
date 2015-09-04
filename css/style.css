@@ -566,9 +566,13 @@ li:hover canvas {
 }
 
 .main-video-video {
-  position: absolute;
+  /*position: absolute;
   top: 72px;
-  left: 394px;
+  left: 394px;*/
+  position: absolute;
+  left: 50%;
+  bottom: 68px;
+  margin-left: -248px;
 }
 
 #socicons{
