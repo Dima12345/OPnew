@@ -7,7 +7,7 @@ $(document).ready(function() {
     js.src = '//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-        
+      
   $('.slider-content').bxSlider({
     auto: true,
     slideWidth: 210,
@@ -37,12 +37,14 @@ $(document).ready(function() {
       $(this).parent().next().slideToggle("open");
   });
 
-	var height1 = $('#above-the-fold').height();
+  
+
+	var height1 = $('#above-the-fold').height() + $('#bot_menu').height() + $('#menu').height();
 	$(window).scroll(function(){
         if($(window).scrollTop() > height1){
-            $('#menu').css('position','fixed');
+            $('#bot_menu').css({'position':'fixed', 'top':0});
         } else {
-            $('#menu').css('position','absolute');
+            $('#bot_menu').css({'position':'absolute', 'top':'817px'});
         }    
 	});
 
@@ -94,7 +96,7 @@ $(document).ready(function() {
   });
 
   $('#play-video').on('click', function(ev) {
-    $("#video")[0].src += "&autoplay=1";
+    $("#video")[0].src = $("#video")[0].src.replace("&autoplay=0","&autoplay=1");
     ev.preventDefault();
   });
   
